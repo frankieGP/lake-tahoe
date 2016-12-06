@@ -6,5 +6,10 @@
               linear-gradient(0deg, $color-body, transparent),
               $color-prim url('#{$path-img}/mountains.jpg') no-repeat center;
   background-size: cover;
-  color: white;
+  color: $white;
+
+  @media #{$brk-narrow} {
+    max-height: 380px;
+    padding: 50px 25px 0;
+  }
 }

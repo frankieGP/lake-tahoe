@@ -1,9 +1,6 @@
 /* Web Fonts -------------------- */
+
 @include font-face('Abolition Regular', abolition-regular);
-/* Base Styles -------------------- */
-
-
-/* Main Styles --------------------- */
 
 .main {
   &-heading {
@@ -11,9 +8,9 @@
     text-transform: uppercase;
     text-shadow: 0 1px 1px $color-shadow;
     margin: 12px 0 0;
+
     @media #{$brk-narrow} {
-      max-height: 380px;
-      padding: 50px 25px 0;
+      @include text(5rem, 1.1);
     }
   }
 
@@ -22,6 +19,7 @@
     letter-spacing: .065em;
     border-bottom: 2px solid;
     padding-bottom: 10px;
+
     @media #{$brk-narrow}{
       font-size: 1.3rem;
       border: none;
@@ -32,8 +30,8 @@
 
 .intro {
   @include text(1.25em, 1.6, $color: initial);
+
   @media #{$brk-narrow}{
     font-size: 1rem;
-
   }
 }
